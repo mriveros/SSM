@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stp.ssm">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".AplicacionSSM">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MenuPrincipalAcitivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".VisitaActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".VisitaCapacitacionActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ListaBeneficiariosActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ReporteActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".FormularioActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".InformarEventoActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".HistorialEvtActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".AlertProviderActivity"
+            android:theme="@style/Theme.MyDialog"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".AlertSessionActivity"
+            android:theme="@style/Theme.MyDialog"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".CalibrarLocationActivity"
+            android:theme="@style/Theme.MyDialog"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ListaFormularios"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".RelevamientoActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".SubFormularioActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".BuscarPersonaActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ListNotificationsActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".VerRespFormActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".CapturaGaleriaActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".SelectGaleriaActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".VideoCapacitacionActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ViewVideoActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape"/>
+
+        <activity
+            android:name=".FormularioSimpleActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".VisitaRelevamientoActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".SelectActivity">
+        </activity>
+
+        <activity
+            android:name=".ReadBarcoderActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".GaleriaInternaActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".CapturaFormularioActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".CustomGetCoordenadasActivity"
+            android:theme="@style/Theme.MyDialog"
+            android:screenOrientation="portrait"/>
+
+        <!--
+		<receiver android:name=".Broadcast.LocationProviderBroadcast">
+            <intent-filter>
+                <action android:name="android.location.PROVIDERS_CHANGED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".Broadcast.NetworkBroadcast">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".Broadcast.ConfigTimeChange">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>-->
+
+        <service android:name=".Servicios.InsertarDatosService"></service>
+        <service android:name=".Servicios.UbicacionService"></service>
+        <service android:name=".Servicios.SendDataService2"></service>
+        <service android:name=".Servicios.NotificacionService"></service>
+        <service android:name=".Servicios.MarcacionService"></service>
+        <service android:name=".Servicios.VerifcGelleryService"></service>
+        <service
+            android:name=".FirebaseCloudMsj.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".FirebaseCloudMsj.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera"
+                  android:required="true" />
+</manifest>

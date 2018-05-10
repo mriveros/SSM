@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_edt_signin_usuario">Cuadro de texto donde debe ingresar su numero de cedula</string>
+    <string name="help_edt_signin_password">Cuadro de texto donde debe ingresar su Contraseña</string>
+    <string name="help_edt_signin_ver">Al marcar el check podra visualizar su contraseña en texto plano.\nUselo con prudencia</string>
+    <string name="help_edt_signin_button">Boton para iniciar el proceso de validacion de credenciales</string>
+
+    <string name="help_linear_menu">Contador de Tiempo del recorrido y distancia aproximada recorrido desde el inicio</string>
+    <string name="help_btn_menu_visita">Presione para realizar un relevamiento de datos. Debe asegurarse de tener el recorrido en curso</string>
+    <string name="help_btn_menu_reporte">Presione para desplegar la pantalla de reportes de los relevamientos realizados</string>
+    <string name="help_btn_menu_evento">Presione para visualizar la pantalla para reportar eventos que se consideren relevantes</string>
+    <string name="help_btn_menu_notificaciones">Presione para visualizar los mensajes enviados desde la coordinacion al usuario(En desarrollo)</string>
+    <string name="help_btn_menu_recorrido">Boton para Inicia/Finalizar el Recorrido</string>
+    <string name="help_btn_menu_marcacion">Boton para realizar la marcacion de entrada/salida</string>
+
+    <string name="help_btn_menu_sycn">Presione para sincronizar las imagenes Pendientes</string>
+    <string name="help_title_sycn">Presione para iniciar el proceso de Sincronizacion de Datos</string>
+</resources>

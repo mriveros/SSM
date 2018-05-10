@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_geo_provider">
+        <item>Geoposicion por GPS</item>
+        <item>Geoposicion por Redes</item>
+    </string-array>
+</resources>

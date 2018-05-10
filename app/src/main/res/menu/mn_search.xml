@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ssm="http://schemas.android.com/apk/res-auto" >
+    <item android:id="@+id/action_search"
+        android:title="BUSCAR"
+        android:icon="@android:drawable/ic_search_category_default"
+        ssm:showAsAction="ifRoom|collapseActionView"
+        ssm:actionViewClass="android.support.v7.widget.SearchView" />
+
+    <item android:id="@+id/action_new"
+        android:title="NUEVO"
+        ssm:showAsAction="ifRoom|collapseActionView"
+        />
+</menu>

@@ -1,0 +1,5 @@
+<root>
+  <item name='android.provider.Settings ACTION_LOCATION_SOURCE_SETTINGS'>
+    <annotation name='java.lang.annotation.Deprecated' />
+  </item>
+</root>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/naranja1"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro1"
+            android:text="@string/lbl_crn_visita"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro1"
+            android:id="@+id/lbl_time_visita"
+            android:text="00:00:00"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_capturas"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/naranja1"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro1"
+            android:text="@string/lbl_cont_capturas"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro1"
+            android:id="@+id/lblcontcapturas"
+            android:text="0"
+            android:textSize="15dp"/>
+
+        <LinearLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/negro1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"></LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro1"
+            android:text="@string/lbl_cont_adjuntos"
+            android:layout_marginLeft="2dp"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro1"
+            android:id="@+id/lblcontadj"
+            android:text="0"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl_tipo_destinatario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/lbl_tipo_benef"
+                    android:visibility="visible"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/spTipoBeneficiario"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_documento"
+                    android:id="@+id/lblCedRuc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:id="@+id/edtCedRuc" />
+
+                    <TextView
+                        android:id="@+id/lbl_separador"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:maxLength="1"
+                        android:inputType="number"
+                        android:id="@+id/edtRucDiv"
+                        android:visibility="gone"/>
+
+                    <ToggleButton
+                        android:id="@+id/tgbtnSinCed"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="20"
+                        android:textOn="@string/lbl_sin_documento"
+                        android:textOff="@string/lbl_sin_documento"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_btn_verificar_ci"
+                    android:id="@+id/btnVerif"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:enabled="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_nombre"
+                    android:id="@+id/lblNombre" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textPersonName"
+                        android:hint="@string/lbl_1er_nombre"
+                        android:ems="10"
+                        android:id="@+id/edtNombre" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textPersonName"
+                        android:hint="@string/lbl_2er_nombre"
+                        android:ems="10"
+                        android:id="@+id/edtNombre1" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_apellidos"
+                    android:id="@+id/lblApellido" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:layout_weight="1"
+                        android:id="@+id/edtApellido"
+                        android:hint="@string/lbl_1er_apellido"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/edtApellido1"
+                        android:hint="@string/lbl_2er_apellido"/>
+                </LinearLayout>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_ch_jefe_familia"
+                    android:id="@+id/chJefeFamilia"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_dpto"
+                    android:id="@+id/lbldepartamento" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spDepartamento"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_distritos"
+                    android:id="@+id/lbldistrito" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spDistritos"/>
+
+
+                <TextView
+                    android:id="@+id/lbllocalidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_localidad" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spLocalidad"/>
+
+                <TextView
+                    android:id="@+id/lbl_motivos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_motivo" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/spMotivos" />
+
+
+                <TextView
+                    android:id="@+id/lbl_observacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_observacion"/>
+                
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/custom_edittext_rouned"
+                    android:gravity="top"
+                    android:id="@+id/edtObservacion"
+                    android:layout_margin="10dp"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/btnFinalizar"
+                    android:padding="20dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

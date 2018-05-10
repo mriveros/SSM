@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/naranja1"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro1"
+            android:text="@string/lbl_crn_visita"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro1"
+            android:id="@+id/lbl_time_visita"
+            android:text="00:00:00"
+            android:textSize="20dp"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_finalizar_capacitacion"
+        android:text="@string/lbl_btn_guardar_finalizar"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/list_videos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
